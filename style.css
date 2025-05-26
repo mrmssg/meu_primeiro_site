@@ -1,0 +1,116 @@
+.tagesschrift-regular {
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+background-color: #121363;
+background-image: linear-gradient(to bottom right,rgb(155, 183, 232), rgb(27, 123, 172));
+color: azure;
+}
+.cabecalho__lista{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20x;
+    font-size: 1.5rem;
+    color: #eeba30; /* Cor do texto dourado */ 
+    text-decoration: none; /* Remove o sublinhado */ 
+    font-weight: bold; /* Texto em negrito */ 
+    padding: 10px 15px; /* Preenchimento ao redor do texto */ 
+    border-radius: 5px; /* Bordas arredondadas */ 
+    transition: all 0.3s; /* Transição suave para efeitos de foco */ 
+}
+
+h1{
+    font-family: "Tagesschrift";
+    color: #A6DCF5;
+    text-shadow:#4f4de2fa 4px 4px;
+    font-size: 4.5rem;
+    text-align: center;
+}
+img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: #4f4de2fa 4px 4px;
+}
+
+
+.texto{
+    width: 60%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    display: flex;
+    margin: auto;
+    text-align: justify;
+}
+.legenda{
+    text-align: center;
+    font-size: smaller;
+    margin-top: 4px;
+}
+h2{
+    font-family: "Tagesschrift";
+    color: #A6DCF5;
+    text-shadow:#4f4de2fa 4px 4px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.carros{
+    align-items: center;
+    display: list-item;
+    justify-content: right;
+    margin: 10;
+    font-size: 1.5rem;
+    list-style: none;
+    text-align: center;
+}
+.autoria{
+    text-align: left;
+    }
+.autoria__texto{
+    text-align: left;
+    font-size: 1.5rem;
+}
+.carros__lista {
+    position: relative; /* Para que a imagem não saia fora do link */
+    display: inline;
+    width: 100px;
+    padding: 5px 0;
+           }
+           .carros__lista:hover {
+    color:#f0f40ac2 ;
+    }
+    .carros__lista span {
+    display: none; /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+}
+.carros__lista:hover span {
+    display: inline; /* Tranforma o SPAN em um elemento do tipo bloco */
+    position: absolute; /* Para você poder posicionar a vontade, sem quebrar o layour em volta */
+    top: 0px; /* Para ficar na mesma altura do link */
+    left: 100%; /* Empurra a imagem para fora do link, ficando a lado do mesmo */
+    }
+a:link {
+  color: rgb(191, 218, 233);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(250, 147, 3);
+  text-decoration: underline;
+  /*background-color: rgb(202, 231, 242);*/
+}
+
+/* selected link */
+a:active {
+  
